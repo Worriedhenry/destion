@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Header from "../app/Components/Header";
-import JoinUs from "../app/Components/Home/JoinUS";
+import JoinUs from "../app/Components/Home/JoinUs";
 import SearchComponent from "../app/Components/Home/SearchBar";
 import Features from "../app/Components/Home/Features";
 import Footer from "../app/Components/Footer";
