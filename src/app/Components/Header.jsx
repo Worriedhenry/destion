@@ -28,7 +28,7 @@ export default function () {
                         <span><img className="w-4 md:w-auto group-hover:rotate-180 " src='/images/Down_arrow.png' />
                             <ul className="absolute hidden group-hover:block top-6 left-0  space-y-2 bg-white p-2 rounded-lg shadow-lg">
                                 <li>
-                                    <a href="">Key Feature</a>
+                                    <a href="" className="text-[0.6rem] font-bold md:text-base">Feature</a>
                                 </li>
                                 <li>
                                     <span className="text-[0.6rem] font-bold md:text-base">Careers</span>
