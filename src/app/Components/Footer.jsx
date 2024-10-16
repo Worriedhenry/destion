@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function Footer() {
 
     return(
@@ -54,10 +55,10 @@ export default function Footer() {
                 Sambhaji Nagar, No2, St. Antony Road, Chembur, Mumbai - 400071, Maharashtra
                 </p>
                 <ul className="flex items-center space-x-4 ">
-                    <li><img src="/images/facebook.webp" /></li>
-                    <li><img src="/images/Insta.webp" /></li>
-                    <li><img src="/images/linkedin_logo.webp" /></li>
-                    <li><img src="/images/Whatsapp.png" /></li>
+                    <li><Image src="/images/facebook.webp" /></li>
+                    <li><Image src="/images/Insta.webp" /></li>
+                    <li><Image src="/images/linkedin_logo.webp" /></li>
+                    <li><Image src="/images/Whatsapp.png" /></li>
                 </ul>
             </div>
         </div>

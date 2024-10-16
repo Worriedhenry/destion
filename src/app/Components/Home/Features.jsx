@@ -1,5 +1,5 @@
 import React,{useEffect, useRef,useState} from "react";
-
+import Image from "next/image";
 export default function Features() {
 
     const [intersectionOfHeading, setIntersectionHeading] = React.useState([false,false]);
@@ -33,19 +33,19 @@ export default function Features() {
                 </p>
                 <div style={{transitionDelay:"200ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={`flex flex-col flex-wrap  md:flex-row space-y-2  transition-transform duration-[1000ms] transform ${intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} `}>
                     <div className="flex md:mt-10 mt-5 md:mr-8 md:ml-5 md:w-[40%]">
-                        <img className="mr-3 md:mr-6 md:h-2/3 h-2/5" src="images/Lens.png" />
+                        <Image className="mr-3 md:mr-6 md:h-2/3 h-2/5" src="images/Lens.png" />
                         <p className="text-xs md:text-base"><span className="text-xs font-bold md:text-base">SEARCH </span>for vital services for company  </p>
                     </div>
                     <div className="flex md:mt-10 mr-8 md:ml-5 justify-center md:w-[40%]">
-                        <img className="mr-3 md:mr-6  md:h-2/3 h-1/5" src="images/Connect.webp" />
+                        <Image className="mr-3 md:mr-6  md:h-2/3 h-1/5" src="images/Connect.webp" />
                         <p className="text-xs md:text-base"><span className="text-xs font-bold md:text-base ">CONNECT </span>with the resources to meet your business needs </p>
                     </div>
                     <div className="flex md:mt-10 mr-8 md:ml-5 md:w-[40%]">
-                        <img className="mr-3 md:mr-6 md:h-2/3 h-2/5" src="images/Research.png" />
+                        <Image className="mr-3 md:mr-6 md:h-2/3 h-2/5" src="images/Research.png" />
                         <p className="text-xs md:text-base"><span className="font-bold">RESEARCH </span>and generate reports that drive growth  </p>
                     </div>
                     <div className="flex md:mt-10 md:mr-8 md:ml-5 md:w-[40%]">
-                        <img className="mr-3 md:mr-6 md:h-1/2 h-2/5" src="images/Academy.png" />
+                        <Image className="mr-3 md:mr-6 md:h-1/2 h-2/5" src="images/Academy.png" />
                         <p className="text-xs md:text-base"><span className="font-bold">ACADEMY </span>to give you the skills for success in your career </p>
                     </div>
                 </div>
@@ -53,21 +53,21 @@ export default function Features() {
             <div className="flex py-2 pt-16 right">
                 <div className="flex">
                     <ul className="flex flex-col justify-end">
-                        <li  style={{transitionDelay:"100ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><img src="images/Chat-bubble1.png" /></li>
-                        <li style={{transitionDelay:"800ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><img src="images/Chat-bubble2.png" /></li>
-                        <li  style={{transitionDelay:"1800ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><img src="images/Chat-bubble3.png" /></li>
-                        <li  style={{transitionDelay:"2500ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><img src="images/Chat-bubble4.png" /></li>
+                        <li  style={{transitionDelay:"100ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><Image src="images/Chat-bubble1.png" /></li>
+                        <li style={{transitionDelay:"800ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><Image src="images/Chat-bubble2.png" /></li>
+                        <li  style={{transitionDelay:"1800ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><Image src="images/Chat-bubble3.png" /></li>
+                        <li  style={{transitionDelay:"2500ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} ><Image src="images/Chat-bubble4.png" /></li>
                         <li  style={{transitionDelay:"500ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} flex justify-end my-2`} >
                             <div className="flex justify-center">
-                                <img className="relative l-10 md:block" src="images/Teacher.webp" />
-                                <img style={{transitionDelay:"3500ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} h-fit `} src="images/Chat-bubble5.png" />
+                                <Image className="relative l-10 md:block" src="images/Teacher.webp" />
+                                <Image style={{transitionDelay:"3500ms",transitionProperty: "opacity",  transitionDuration: "0.5s" }} className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/4 opacity-0'} h-fit `} src="images/Chat-bubble5.png" />
                             </div>
                         </li>
 
                     </ul>
                 </div>
                 <div>
-                    <img  className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/3 opacity-0'}`}  src="images/Student.webp" />
+                    <Image  className={` transition-transform duration-[1000ms] transform ${intersectionOfHeading && intersectionOfHeading[0] ? 'translate-x-0 opacity-100' : 'translate-x-1/3 opacity-0'}`}  src="images/Student.webp" />
                 </div>
             </div>
         </div>
