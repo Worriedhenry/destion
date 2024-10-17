@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 export default function SearchComponent() {
 
     const [searchTerm, setSearchTerm] = useState('');
- 
+
     return (
         <div className="md:px-20 px-8 md:my-36 flex flex-col md:flex-row  md:py-10 bg-[#FAFBFC] ">
             <div className="left md:max-w-[50%]">
@@ -17,8 +17,8 @@ export default function SearchComponent() {
                     <form >
                         <div className="max-w-xl ">
                             <div className="flex rounded-md overflow-hidden w-full">
-                                <input type="text" value={searchTerm} onChange={(e)=>handleInputChange(e.target.value)} className="w-full rounded-md px-6 font-bold text-sm md:text-base rounded-r-none border-2 border-[#BFBFBF]" placeholder="Search service" />
-                                <button onClick={()=>handleSearch} className="hover:bg-[linear-gradient(95.74deg,_#9400D3_-7.82%,_#0076CE_143.96%)] focus:outline-none bg-[linear-gradient(95.74deg,_#0076CE_-7.82%,_#9400D3_143.96%)] text-white md:px-14 px-8 md:text-lg text-xs font-semibold py-4 rounded-r-md">Search</button>
+                                <input type="text" value={searchTerm} onChange={(e) => handleInputChange(e.target.value)} className="w-full rounded-md px-6 font-bold text-sm md:text-base rounded-r-none border-2 border-[#BFBFBF]" placeholder="Search service" />
+                                <button onClick={() => handleSearch} className="hover:bg-[linear-gradient(95.74deg,_#9400D3_-7.82%,_#0076CE_143.96%)] focus:outline-none bg-[linear-gradient(95.74deg,_#0076CE_-7.82%,_#9400D3_143.96%)] text-white md:px-14 px-8 md:text-lg text-xs font-semibold py-4 rounded-r-md">Search</button>
                             </div>
                         </div>
                     </form>
